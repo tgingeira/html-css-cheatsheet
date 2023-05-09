@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Selectors</h1>
+    </header>
+    <main>
+      <h2>Basic Selectors</h2>
+      <table>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Element</td>
+          <td class="code">p {<br />&emsp;color: blue;<br />}</td>
+          <td>Selects all <span>&lt;p&gt;</span> elements</td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td class="code">#id {<br />&emsp;color: blue;<br />}</td>
+          <td>Selects all elements with the id <span>ID</span></td>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td class="code">.class {<br />&emsp;color: blue;<br />}</td>
+          <td>Selects all elements with the class <span>code</span></td>
+        </tr>
+        <tr>
+          <td>Universal Selector</td>
+          <td class="code">* {<br />&emsp;color: blue;<br />}</td>
+          <td>Selects all html elements</td>
+        </tr>
+        <tr>
+          <td>Grouping Selector</td>
+          <td class="code">h1, h2, p {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all <span>&lt;h1&gt;</span>, <span>&lt;h2&gt;</span> and
+            <span>&lt;p&gt;</span> elements
+          </td>
+        </tr>
+        <tr>
+          <td>Attribute</td>
+          <td class="code">[attribute] {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all elements with the attribute <span>attribute</span>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Combinator Selectors</h2>
+      <table>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Descendant Selector</td>
+          <td class="code">div p {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all <span>&lt;p&gt;</span> elements inside
+            <span>&lt;div&gt;</span> elements
+          </td>
+        </tr>
+        <tr>
+          <td>Child Selector</td>
+          <td class="code">div > p {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all <span>&lt;p&gt;</span> elements where the parent is a
+            <span>&lt;div&gt;</span> element
+          </td>
+        </tr>
+        <tr>
+          <td>Adjacent Sibling Selector</td>
+          <td class="code">div + p {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all <span>&lt;p&gt;</span> elements that are placed
+            immediately after <span>&lt;div&gt;</span> elements
+          </td>
+        </tr>
+        <tr>
+          <td>General Sibling Selector</td>
+          <td class="code">div ~ p {<br />&emsp;color: blue;<br />}</td>
+          <td>
+            Selects all <span>&lt;p&gt;</span> elements that are placed after
+            <span>&lt;div&gt;</span> elements
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>&copy 2023 Tiago Gingeira</footer>
+  </body>
+</html>
