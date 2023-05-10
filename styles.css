@@ -54,6 +54,8 @@ body {
 
 footer {
   font-family: poppins;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  background-color: ivory;
+  width: 100%;
 }
